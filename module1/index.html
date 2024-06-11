@@ -157,12 +157,13 @@
     Tags for inserting links and buttons
     ##################################### -->
 
-    <!-- Сылка -->
+  <!-- Сылка -->
   <a href="https://www.google.com/" target="_blank">Google</a> <br>
   <!-- Якорный сылка -->
   <a href="#block">Якорь</a>
 
-  <p style="width: 100px;">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварных океана пор пустился
+  <p style="width: 100px;">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Коварных
+    океана пор пустился
     буквенных свой гор последний лучше? Языкового алфавит злых океана последний жизни, они лучше что прямо несколько.
   </p>
 
@@ -182,104 +183,164 @@
     Table tags
     ##################################### -->
 
-    <table border="5px">
-      <caption>Это первое таплица</caption>
-      <thead>
-        <tr>
-          <td>Калонка 1</td>
-          <td>Калонка 2</td>
-          <td>Калонка 3</td>
-          <td>Калонка 4</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Текст</td>
-          <td>Текст</td>
-          <td>Текст</td>
-          <td>Текст</td>
-        </tr>
-        <tr>
-          <td>Текст</td>
-          <td rowspan="2">Текст</td>
-          <td>Текст</td>
-          <td>Текст</td>
-        </tr>
-        <tr>
-          <td>Текст</td>
-          <td>Текст</td>
-          <td>Текст</td>
-        </tr>
-        <tr>
-          <td>Текст</td>
-          <td>Текст</td>
-          <td>Текст</td>
-          <td>Текст</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="4">Текст</td>
-        </tr>
-      </tfoot>
-      
-    </table>
+  <table border="5px">
+    <caption>Это первое таплица</caption>
+    <thead>
+      <tr>
+        <td>Калонка 1</td>
+        <td>Калонка 2</td>
+        <td>Калонка 3</td>
+        <td>Калонка 4</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Текст</td>
+        <td>Текст</td>
+        <td>Текст</td>
+        <td>Текст</td>
+      </tr>
+      <tr>
+        <td>Текст</td>
+        <td rowspan="2">Текст</td>
+        <td>Текст</td>
+        <td>Текст</td>
+      </tr>
+      <tr>
+        <td>Текст</td>
+        <td>Текст</td>
+        <td>Текст</td>
+      </tr>
+      <tr>
+        <td>Текст</td>
+        <td>Текст</td>
+        <td>Текст</td>
+        <td>Текст</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Текст</td>
+      </tr>
+    </tfoot>
 
-    <!-- 
+  </table>
+
+  <!-- 
     #####################################
     Формы
     Form
     ##################################### -->
 
-    <form method="post" name="form1" autocomplete="off">
-      <!-- Поля для ввода  -->
-      <label for="#input">Введите текст</label>
-      <input id="input" type="text">
+  <form method="post" name="form1" autocomplete="off">
+    <!-- Поля для ввода  -->
+    <label for="#input">Введите текст</label>
+    <input id="input" type="text">
 
-      <label>
-        Этов второй способ
-        <input type="text">
-      </label> 
+    <label>
+      Этов второй способ
+      <input type="text">
+    </label>
 
-      <!-- Поля для выбора -->
-       <select name="select" id="">
+    <!-- Поля для выбора -->
+    <select name="select" id="">
+      <option value="one">Значение не выбрано</option>
+      <option value="two">Один из пунктов</option>
+      <option value="three">Один из пунктов</option>
+      <option value="four">Один из пунктов</option>
+    </select>
+
+    <textarea name="" id="" cols="20" rows="10">
+
+       </textarea>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <form action="">
+    <!-- Группировать  -->
+    <fieldset>
+      <!-- подпись группы -->
+      <legend>Два инпута</legend>
+      <input type="text">
+      <input type="text">
+    </fieldset>
+
+    <fieldset>
+      <legend>Здесь инпут и селект</legend>
+      <input type="text">
+
+      <select name="select" id="">
         <option value="one">Значение не выбрано</option>
         <option value="two">Один из пунктов</option>
         <option value="three">Один из пунктов</option>
         <option value="four">Один из пунктов</option>
-       </select>
+      </select>
+    </fieldset>
 
-       <textarea name="" id="" cols="20"  rows="10">
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
+  </form> <br>
 
-       </textarea>
 
-      <button type="submit">Отправить</button>
-    </form>
+  <!-- Типы поля вывода  -->
+  <form action="">
+    <input type="text">
+    <br>
+    <input type="number">
+    <br>
+    <input type="password">
+    <br>
+    <input type="tel">
+    <br>
+    <input type="email">
+    <br>
+    <input type="search">
+    <br>
+    <input type="file">
+    <br>
+    <input type="url">
+    <br>
+    <input type="date">
+    <br>
+    <input type="datetime-local">
+    <br>
+    <input type="month">
+    <br>
+    <input type="week">
+    <br>
+    <input type="time">
 
-    <form action="">
-      <!-- Группировать  -->
-      <fieldset>
-        <!-- подпись группы -->
-        <legend>Два инпута</legend>
-        <input type="text">
-        <input type="text">
-      </fieldset>
+    <!-- Radio -->
+     <label>Поставь галочку
+      <input type="radio" name="name1">
+      <input type="radio" name="name1">
+      <input type="radio" name="name1">
+     </label>
 
-      <fieldset>
-        <legend>Здесь инпут и селект</legend>
-        <input type="text">
+     <!-- Checkbox -->
 
-        <select name="select" id="">
-          <option value="one">Значение не выбрано</option>
-          <option value="two">Один из пунктов</option>
-          <option value="three">Один из пунктов</option>
-          <option value="four">Один из пунктов</option>
-        </select>
-      </fieldset>
+     <label > Checkbox
+      <input type="checkbox">
+      <input type="checkbox">
+      <input type="checkbox">
+     </label>
 
-      <button type="submit">Отправить</button>
-      <button type="reset">Очистить</button>
-    </form>
+     <!-- Datalist -->
+    <input list="list">
+    <datalist id="list">
+      <option value="Value1`">Value1</option>
+      <option value="Value2`">Value2</option>
+      <option value="Value3`">Value3</option>
+    </datalist>
+
+    <button type="reset">очистить</button>
+    <button type="submit">Отправить</button>
+
+    <p>Lorem ipsum, dolor sit <br> amet consectetur adipisicing elit. Ullam repellendus tenetur quod adipisci pariatur fugit
+      at voluptatibus voluptatem nisi sint fugiat quasi, inventore quaerat maiores esse veniam, qui consectetur
+      molestiae?</p>
+  </form>
 
 </body>
 
