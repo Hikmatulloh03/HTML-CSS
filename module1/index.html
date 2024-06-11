@@ -225,6 +225,61 @@
       
     </table>
 
+    <!-- 
+    #####################################
+    Формы
+    Form
+    ##################################### -->
+
+    <form method="post" name="form1" autocomplete="off">
+      <!-- Поля для ввода  -->
+      <label for="#input">Введите текст</label>
+      <input id="input" type="text">
+
+      <label>
+        Этов второй способ
+        <input type="text">
+      </label> 
+
+      <!-- Поля для выбора -->
+       <select name="select" id="">
+        <option value="one">Значение не выбрано</option>
+        <option value="two">Один из пунктов</option>
+        <option value="three">Один из пунктов</option>
+        <option value="four">Один из пунктов</option>
+       </select>
+
+       <textarea name="" id="" cols="20"  rows="10">
+
+       </textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+
+    <form action="">
+      <!-- Группировать  -->
+      <fieldset>
+        <!-- подпись группы -->
+        <legend>Два инпута</legend>
+        <input type="text">
+        <input type="text">
+      </fieldset>
+
+      <fieldset>
+        <legend>Здесь инпут и селект</legend>
+        <input type="text">
+
+        <select name="select" id="">
+          <option value="one">Значение не выбрано</option>
+          <option value="two">Один из пунктов</option>
+          <option value="three">Один из пунктов</option>
+          <option value="four">Один из пунктов</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Отправить</button>
+      <button type="reset">Очистить</button>
+    </form>
 
 </body>
 
