@@ -1,0 +1,31 @@
+/* Cascading Style sheets  */
+/* Каскадные таблица стилей  */
+
+.parent{
+    color: red;
+    border: 20px solid black;
+}
+
+div{
+    color: aqua;
+}
+
+#id-block{
+    background-color: blue;
+}
+
+/* .bl{
+    color: blueviolet;
+} */
+
+.block1, .block2, .block3{
+    color: blueviolet;
+}
+
+div.text{
+    color: rgb(165, 209, 19);
+}
+
+div .orange{
+    color: chocolate;
+}
